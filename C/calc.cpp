@@ -39,12 +39,12 @@ int main (){
     cout << "5. Exit" << endl;
 
     do{
+        cout << "Select operation for the two numbers: ";
+        cin >> z;
         cout << "Enter your two numbers below, each on their own line: " << endl;
         cin >> x;
         cin >> y;
-        cout << "Select operation for the two numbers: ";
-        cin << z;
-
+        
         switch (z){
             case 1: add(x, y);
             break;
@@ -55,7 +55,7 @@ int main (){
             case 4: dividing(x, y);
             break;
             default: cout << "Invalid choice!" << endl;
+        }
         }while(z != 5);
         return 0;
     }
-}
